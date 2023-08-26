@@ -5,19 +5,21 @@
   "main": "printer-web-component.mjs",
   "type": "module",
   "scripts": {
-    "build": "esbuild printer-web-component.jsx --bundle --format=esm --minify --outfile=printer-web-component.mjs"
+    "build": "esbuild printer-web-component.tsx --bundle --format=esm --minify --outfile=printer-web-component.mjs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "buffer": "^6.0.3",
     "esbuild": "0.19.2",
+    "html-react-parser": "^4.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-thermal-printer": "^0.13.0",
     "string_decoder": "^1.3.0"
   },
   "devDependencies": {
+    "@types/react": "^18.2.21",
     "prettier": "^3.0.2"
   }
 }
