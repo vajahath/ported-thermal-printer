@@ -9,7 +9,7 @@ import {
   render,
 } from "react-thermal-printer";
 
-async function renderPrintContent() {
+export async function renderPrintContent() {
   const data = await render(
     <Printer type="epson">
       <Text>Hello World</Text>

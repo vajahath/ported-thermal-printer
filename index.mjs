@@ -1,12 +1,13 @@
-import { PrinterElement } from "./printer-web-component.mjs";
+import { renderPrintContent } from "./printer-web-component.mjs";
 
-window.customElements.define("printer-element", PrinterElement);
+console.log(await renderPrintContent());
+// window.customElements.define("printer-element", PrinterElement);
 
-document.getElementById("test-button").addEventListener("click", () => {
-  console.log("clicked");
-  document
-    .getElementById("printer-element")
-    .dispatchEvent(
-      new CustomEvent("print", { detail: { stuff: "other stuff" } })
-    );
-});
+// document.getElementById("test-button").addEventListener("click", () => {
+//   console.log("clicked");
+//   document
+//     .getElementById("printer-element")
+//     .dispatchEvent(
+//       new CustomEvent("print", { detail: { stuff: "other stuff" } })
+//     );
+// });
