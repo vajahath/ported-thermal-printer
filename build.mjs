@@ -1,10 +1,10 @@
 import * as esbuild from "esbuild";
 
 await esbuild.build({
-  entryPoints: ["thermal-printer.tsx"],
+  entryPoints: ["dist/thermal-printer.jsx"],
   bundle: true,
   format: "esm",
   sourcemap: true,
   minify: true,
-  outfile: "thermal-printer.mjs",
+  outfile: "dist/thermal-printer.js",
 });
