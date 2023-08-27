@@ -4,6 +4,7 @@ let device;
 
 document.getElementById("test-print").addEventListener("click", async () => {
   await connectPrinter();
+  console.log(device);
   console.log("Clicked, preparing data...");
   const printData = await renderPrintContent({
     type: "printer",

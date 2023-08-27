@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc && node build.mjs",
-    "start": "cd dist && http-server . -o"
+    "start": "http-server . -o"
   },
   "author": "",
   "license": "ISC",
