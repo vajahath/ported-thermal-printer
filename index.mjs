@@ -1,9 +1,3 @@
-import { renderPrintContent } from "./printer-web-component.mjs";
+import { renderPrintContent } from "./thermal-printer.mjs";
 
-console.log(
-  (
-    await renderPrintContent(
-      `<Printer type="epson"><Text>Hello World</Text></Printer>`
-    )
-  ).toString()
-);
+console.log((await renderPrintContent({})).toString());
