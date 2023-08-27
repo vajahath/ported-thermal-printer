@@ -25,7 +25,10 @@ export async function renderPrintContent(printData: IPrintData) {
 
 function transformPrintDataToReactNodes(printData: IPrintData) {
   return (
-    <Printer type={printData.properties.type}>
+    <Printer
+      type={printData.properties.type}
+      width={printData.properties.width}
+    >
       {printData.children.map((child) => {
         switch (child.type) {
           case "text": {
@@ -114,6 +117,7 @@ interface IPrintData {
   type: "printer";
   properties: {
     type: PrinterType;
+    width?: number;
   };
   children: IPrintItem[];
 }
