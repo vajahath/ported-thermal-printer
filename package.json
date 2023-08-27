@@ -5,7 +5,8 @@
   "main": "printer-web-component.mjs",
   "type": "module",
   "scripts": {
-    "build": "tsc && node build.mjs"
+    "build": "tsc && node build.mjs",
+    "start": "cd dist && http-server . -o"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@types/react": "^18.2.21",
     "esbuild-plugin-tsc": "^0.4.0",
+    "http-server": "^14.1.1",
     "prettier": "^3.0.2",
     "typescript": "^5.2.2"
   }
